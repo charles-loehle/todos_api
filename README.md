@@ -1,3 +1,3 @@
 # Todo List API
-Todo list API made with node, mongo and mongoose. Credit goes to Colt Steele's Advanced Web Developer Boot Camp.
+Todo list API using node, mongo, mongoose and jquery. Made with Colt Steele's Advanced Web Developer Boot Camp. Features REST routing
 
