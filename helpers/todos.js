@@ -61,3 +61,12 @@ exports.deleteTodo = (req, res) => {
 }
 
 module.exports = exports
+
+/**
+ * THE ROUTES!
+ * GET   /api/todos   List all todos
+ * POST  /api/todos   Create new todo
+ * GET   /api/todo/:todoid  Get a todo
+ * PUT   /api/todo/:todoid  Update a todo
+ * DELETE /api/todo/:todoid  Delete a todo 
+ */

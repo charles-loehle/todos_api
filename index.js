@@ -9,9 +9,13 @@ var todoRoutes = require('./routes/todos')
 // allows us to access the request body as req.body in a POST or PUT request
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+// que up css file
+app.use(express.static(__dirname + '/public'))
+// que up index.html file
+app.use(express.static(__dirname + '/views'))
 
 app.get('/', (req, res) => {
-  res.send('HELLO FROM THE ROOT ROUTE')
+  res.sendFile('index.html')
 })
 
 // prefix all routes with '/api/todos'

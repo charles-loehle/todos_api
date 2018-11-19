@@ -4,12 +4,17 @@ var db = require('../models')
 var helpers = require('../helpers/todos')
 
 router.route('/')
+  // INDEX
   .get(helpers.getTodos)
+  // CREATE
   .post(helpers.createTodo)
 
 router.route('/:todoId')
+  // SHOW
   .get(helpers.getTodo)
+  // UPDATE
   .put(helpers.updateTodo)
+  // DELETE
   .delete(helpers.deleteTodo)
 
 module.exports = router
